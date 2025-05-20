@@ -63,5 +63,14 @@
       <div id="passwords"></div>
 
     <script src="script.js"></script>
+    <script>
+      const slider = document.getElementById("lengthSlider");
+      const lengthValue = document.getElementById("lengthValue");
+
+      slider.addEventListener("input", () => {
+        lengthValue.textContext = slider.value;
+      });
+    </script>
+    
   </body>
 </html>
