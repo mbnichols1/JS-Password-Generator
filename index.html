@@ -46,10 +46,19 @@
     font-family: monospace;
     font-size: 16px;
   }
+  input[type="range"] {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+}
+
 </style>
   </head>
   <body>
     <h1>Password Generator</h1>
+    <label for="lengthSlider">Password Length: <span id="lengthValue">12</span></label><br>
+    <input type="range" id="lengthSlider" min="6" max="32" value="12">
+    <br><br>
     <button onclick= "generatePasswords()">Generate 10 Passwords</button>
       <div id="passwords"></div>
 
