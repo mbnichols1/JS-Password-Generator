@@ -36,3 +36,12 @@ function generatePasswords() {
     output.appendChild(container);
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.getElementById("lengthSlider");
+  const lengthValue = document.getElementById("lengthValue");
+
+  slider.addEventListener("input", () => {
+    lengthValue.textContent = slider.value;
+  });
+});
