@@ -1,10 +1,11 @@
 function generatePasswords() {
   const chars ="ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%^&*";
   const passwords = new Set();
+  const length = parseInt(document.getElementById("lengthSlider").value);
 
   while (passwords.size < 10) {
     let pwd = "";
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < length; i++) {
       pwd += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     passwords.add(pwd);
