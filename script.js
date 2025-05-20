@@ -18,3 +18,4 @@ function generatePasswords() {
     div.textContent = pwd;
     output.appendChild(div);
   });
+}
