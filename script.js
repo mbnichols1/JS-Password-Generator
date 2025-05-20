@@ -4,7 +4,7 @@ function generatePasswords() {
 
   while (passwords.size < 10) {
     let pwd = "";
-    for (i = 0; i < 12; i++) {
+    for (let i = 0; i < 12; i++) {
       pwd += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     passwords.add(pwd);
@@ -12,10 +12,9 @@ function generatePasswords() {
 
   const output = document.getElementById("passwords");
   output.innerHTML = "";
-  passwords.forEach(pwd <= {
-    const.div = document.createElement("div");
+  passwords.forEach(pwd => {
+    const div = document.createElement("div");
     div.className = "password";
     div.textContent = pwd;
     output.appendChild(div);
   });
-;
